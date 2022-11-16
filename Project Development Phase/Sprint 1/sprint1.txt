@@ -1,4 +1,8 @@
-Dataset Details
+Data Collection and Preprocessing
+
+- Collected American Sign Language (ASL) dataset from Kaggle
+- Used ImageDataGenerator to augment and preprocess images
+- Split into training, validation and testing data
 
 Source: Kaggle (https://www.kaggle.com/datasets/ahmedkhanak1995/sign-language-gesture-images-dataset)
 
