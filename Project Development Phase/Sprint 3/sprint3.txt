@@ -1,0 +1,4 @@
+Application User Interface building
+- Created a Login and Sign Up page for user
+- Created a dashboard for user with 3 options
+- Created a route for Sign to Text conversion and another route for Text to Sign Conversion
