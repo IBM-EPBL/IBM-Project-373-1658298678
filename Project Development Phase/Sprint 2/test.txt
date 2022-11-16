@@ -1,5 +1,0 @@
-Model Building and Testing
-
-- Initialized a Sequential model with 6 CNN and MaxPooling layers along with Flatten and Dense layers
-- Trained and validated the model on a dataset that consists of 37 classes and 1500 images per class
-- Validation accuracy of the model is found to be 99.19%
