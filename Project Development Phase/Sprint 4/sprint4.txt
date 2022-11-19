@@ -1,0 +1,5 @@
+Model Integration with Application
+
+- Integrated the Deep Learning model into the Web app
+- The translated/converted text is converted to an audio which is given as the output along with the text on screen
+- The web app was made responsive to smaller screens as well 

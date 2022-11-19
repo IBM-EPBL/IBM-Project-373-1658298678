@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Customer Page</title>
+  <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}">
+  <script src="{{url_for('static',filename='js/jquery.min.js')}}"></script>
+
+  <style media="screen">
+    .option {
+      margin-top: 25%;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="col-md-offset-2 col-md-8">
+      <h1 class="page-header text-primary text-center">Welcome {{ usr }} !!!</h1>
+      <h4 style="text-align:justify">
+        The project aims to develop a system that converts the sign language into a human hearing voice in the desired language
+        to convey a message to normal people. We are making use of a convolution neural network to create a model
+        that is trained on different hand gestures. This web app is built using this model.
+        This app enables deaf and dumb people to convey their information using signs which get converted to
+        human-understandable language and speech is given as output.<br>
+      </h4>
+      <!-- <h4 class="text-center">
+        <br>This application was built by:<br><br>
+        Mohnish S (2019504551)<br>
+        Krishna Kumar P (2019504541)<br>
+        Ranjith V (2019504570)<br>
+        Beulah Divya Kannan (2019504011)
+      </h4> -->
+      <div class="col-md-offset-4 col-md-4">
+
+        <a style="margin-top:25%;" href="/signtotext" class="btn btn-lg btn-primary btn-success btn-block option">Convert Sign</a>
+        <!-- <a style="margin-top:10%;" href="" class="btn btn-lg btn-warning btn-block option" disabled>Convert Text</a> -->
+        <a style="margin-top:10%;" href="{{url_for('logout')}}" class="btn btn-danger btn-block option">Logout</a>
+      </div>
+    </div>
+</body>
+
+</html>
