@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Sign to Text</title>
+  <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}">
+</head>
+
+<body>
+  <div class="col-md-offset-2 col-md-8">
+    <h2 class="page-header text-primary text-center">Sign to Text Converter</h2>
+    <div class="col-md-offset-4 col-md-4">
+      <a href="/homepage" class="btn btn-primary btn-block">Homepage</a>
+    </div>
+    <div style="margin-top:5%;" class="col-md-6 col-md-offset-3">
+      <img src="{{ url_for('video_feed') }}" style="width:99%">
+    </div>
+    <div class="col-md-offset-3 col-md-6">
+      <h1 style="text-align:center;">Prediction: {{ pred }}</h1>
+    </div>
+    <div style="margin-top:50%;text-align:center;">
+      <form class="" action="{{ url_for('capture') }}" method="get">
+        <input type="submit" name="capture" value="Translate Sign" class="btn btn-success">
+      </form>
+    </div>
+</body>
+
+</html>
